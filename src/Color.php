@@ -11,7 +11,7 @@ class Color
 
     public function __construct(int $r, int $g, int $b, int $a = 0)
     {
-        assert($r >= 0 && $a <= 255);
+        assert($r >= 0 && $r <= 255);
         assert($g >= 0 && $g <= 255);
         assert($b >= 0 && $b <= 255);
         assert($a >= 0 && $a <= 127);
