@@ -31,4 +31,84 @@ class Color
         $rgba = hexToRgba($hex);
         return self::fromArray($rgba);
     }
+
+    /**
+     * Get the value of red
+     */ 
+    public function getRed()
+    {
+        return $this->r;
+    }
+
+    /**
+     * Set the value of red
+     *
+     * @return  self
+     */ 
+    public function setRed($red)
+    {
+        assert($red >= 0 && $red <= 255);
+        $this->r = $red;
+        return $this;
+    }
+
+    /**
+     * Get the value of green
+     */ 
+    public function getGreen()
+    {
+        return $this->g;
+    }
+
+    /**
+     * Set the value of green
+     *
+     * @return  self
+     */ 
+    public function setGreen($green)
+    {
+        assert($green >= 0 && $green <= 255);
+        $this->g = $green;
+        return $this;
+    }
+
+    /**
+     * Get the value of blue
+     */ 
+    public function getBlue()
+    {
+        return $this->b;
+    }
+
+    /**
+     * Set the value of blue
+     *
+     * @return  self
+     */ 
+    public function setBlue($blue)
+    {
+        assert($blue >= 0 && $blue <= 255);
+        $this->b = $blue;
+        return $this;
+    }
+
+    /**
+     * Get the value of alpha
+     */ 
+    public function getAlpha()
+    {
+        return $this->a;
+    }
+
+    /**
+     * Set the value of a
+     *
+     * @return  self
+     */ 
+    public function setAlpha($alpha)
+    {
+        assert($alpha >= 0 && $alpha <= 127);
+        $this->a = $alpha;
+        return $this;
+    }
 }
