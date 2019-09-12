@@ -42,6 +42,17 @@ class Color
         );
     }
 
+    public static function randomWithAlpha(int $alpha)
+    {
+        assert($alpha >= 0 && $alpha <= 127);
+        return new self(
+            rand(0, 255),
+            rand(0, 255),
+            rand(0, 255),
+            $alpha
+        );
+    }
+
     /**
      * Get the value of red
      */
