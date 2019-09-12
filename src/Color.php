@@ -1,6 +1,6 @@
 <?php
 
-namespace Colorama;
+namespace Phrism;
 
 class Color
 {

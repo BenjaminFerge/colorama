@@ -1,5 +1,5 @@
 {
-    "name": "benjaminferge/colorama",
+    "name": "benjaminferge/phrism",
     "description": "PHP library for dealing with colors.",
     "type": "library",
     "license": "MIT",
@@ -12,7 +12,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Colorama\\": "src/"
+            "Phrism\\": "src/"
         }
     }
 }
