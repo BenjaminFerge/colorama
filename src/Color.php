@@ -32,9 +32,19 @@ class Color
         return self::fromArray($rgba);
     }
 
+    public static function random(bool $withAlpha = false)
+    {
+        return new self(
+            rand(0, 255),
+            rand(0, 255),
+            rand(0, 255),
+            ($withAlpha ? rand(0, 127) : 0)
+        );
+    }
+
     /**
      * Get the value of red
-     */ 
+     */
     public function getRed()
     {
         return $this->r;
@@ -44,7 +54,7 @@ class Color
      * Set the value of red
      *
      * @return  self
-     */ 
+     */
     public function setRed($red)
     {
         assert($red >= 0 && $red <= 255);
@@ -54,7 +64,7 @@ class Color
 
     /**
      * Get the value of green
-     */ 
+     */
     public function getGreen()
     {
         return $this->g;
@@ -64,7 +74,7 @@ class Color
      * Set the value of green
      *
      * @return  self
-     */ 
+     */
     public function setGreen($green)
     {
         assert($green >= 0 && $green <= 255);
@@ -74,7 +84,7 @@ class Color
 
     /**
      * Get the value of blue
-     */ 
+     */
     public function getBlue()
     {
         return $this->b;
@@ -84,7 +94,7 @@ class Color
      * Set the value of blue
      *
      * @return  self
-     */ 
+     */
     public function setBlue($blue)
     {
         assert($blue >= 0 && $blue <= 255);
@@ -94,7 +104,7 @@ class Color
 
     /**
      * Get the value of alpha
-     */ 
+     */
     public function getAlpha()
     {
         return $this->a;
@@ -104,7 +114,7 @@ class Color
      * Set the value of a
      *
      * @return  self
-     */ 
+     */
     public function setAlpha($alpha)
     {
         assert($alpha >= 0 && $alpha <= 127);
