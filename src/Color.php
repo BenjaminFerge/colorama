@@ -132,4 +132,12 @@ class Color
         $this->a = $alpha;
         return $this;
     }
+
+    public function toHex()
+    {
+        if ($this->a) {
+            return sprintf("#%02x%02x%02x%02x", $this->r, $this->g, $this->b, 255 - $this->a * 2);
+        }
+        return sprintf("#%02x%02x%02x", $this->r, $this->g, $this->b);
+    }
 }
