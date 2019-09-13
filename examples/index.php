@@ -35,6 +35,18 @@ function colorBlock(Color $color)
     <dd><?=colorBlock(Color::random(true))?></dd>
     <dt>Random with alpha 100</dt>
     <dd><?=colorBlock(Color::randomWithAlpha(100))?></dd>
+    <dt>From Hex #ff0000</dt>
+    <dd><?=colorBlock(Color::fromHex(0xff0000))?></dd>
+    <dt>From Hex #00ff00</dt>
+    <dd><?=colorBlock(Color::fromHex(0x00ff00))?></dd>
+    <dt>From Hex #0000ff</dt>
+    <dd><?=colorBlock(Color::fromHex(0x0000ff))?></dd>
+    <dt>From Hex #0000ff00</dt>
+    <dd><?=colorBlock(Color::fromHex(0x0000ff00))?></dd>
+    <dt>From Hex #0000ff77</dt>
+    <dd><?=colorBlock(Color::fromHex(0x0000ff77))?></dd>
+    <dt>From Hex #0000ffaa</dt>
+    <dd><?=colorBlock(Color::fromHex(0x0000ffaa))?></dd>
 </dl>
 </body>
 </html>

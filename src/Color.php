@@ -28,8 +28,8 @@ class Color
 
     public static function fromHex($hex)
     {
-        $rgba = hexToRgba($hex);
-        return self::fromArray($rgba);
+        $arr = colorHexHasAlpha($hex) ? hexToRgba($hex) : HexToRgb($hex);
+        return self::fromArray($arr);
     }
 
     public static function random(bool $withAlpha = false)

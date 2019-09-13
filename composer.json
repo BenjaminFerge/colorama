@@ -13,7 +13,10 @@
     "autoload": {
         "psr-4": {
             "Phrism\\": "src/"
-        }
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "scripts": {
         "examples": "php -S localhost:8080 -t examples"
