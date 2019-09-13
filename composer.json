@@ -14,5 +14,11 @@
         "psr-4": {
             "Phrism\\": "src/"
         }
+    },
+    "scripts": {
+        "examples": "php -S localhost:8080 -t examples"
+    },
+    "config": {
+        "process-timeout": 0
     }
 }
